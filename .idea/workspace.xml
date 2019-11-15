@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7650831a-8906-4f44-a99f-1eae54cdf88a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/quotesin/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/quotesin/functions.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,7 +51,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573779351719</updated>
-      <workItem from="1573779352967" duration="3414000" />
+      <workItem from="1573779352967" duration="3756000" />
+      <workItem from="1573808162575" duration="463000" />
+      <workItem from="1573808819747" duration="5746000" />
     </task>
     <servers />
   </component>
@@ -62,7 +65,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

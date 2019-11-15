@@ -56,7 +56,8 @@ define('SECURE_AUTH_SALT', 'kQ(~J6 :QS66G[o%hF;hbn|+HW0l@s9`BL CM:l%V[La^xHigFKy
 define('LOGGED_IN_SALT',   'SNe[j,<8<|=§+q56gjMG &:VW!7!|gQw_0Y{8C$g]:>Pb`!pOLxCla={D_uyTO%g');
 define('NONCE_SALT',       '?qZiSyh^7[;vCf2R§L@Qn(d0OleY~KaZ.60;K>[3F) GeqZ9Z7+CF($)4Tp-yFMR');
 
-
+define('WP_HOME','http://elonmusk.quotes/');
+define('WP_SITEURL','http://elonmusk.quotes/');
 
 /**#@-*/
 
@@ -91,3 +92,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once( ABSPATH . 'wp-settings.php' );
+
+

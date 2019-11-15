@@ -201,3 +201,69 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 // End
+
+function elon_get_featured_ids() {
+	if ( false === ( $all_media_ids = get_transient( 'all_featured_ids' ) ) ) {
+		$all_media_ids = get_posts( [
+			'post_type'      => 'attachment',
+			'post_mime_type' => 'image',
+			'post_status'    => 'inherit',
+			'posts_per_page' => - 1, // for demo only
+			'fields'         => 'ids', // only return ids
+		] );
+		// cache for an hour
+		set_transient( 'all_featured_ids', $all_media_ids, 60 * 60 * 1 );
+	}
+
+	return $all_media_ids;
+}
+
+add_action( 'rest_api_init', function () {
+	register_rest_route(
+		'featured-images/v2', '/get',
+		[
+			'methods'  => 'GET',
+			'callback' => 'elon_get_featured_ids',
+		]
+	);
+} );
+
+function elon_get_quotes() {
+	// cache purge
+	//delete_transient('all_quotes');
+
+	if ( false === ( $all_quotes = get_transient( 'all_quotes' ) ) ) {
+		$all_media_ids = null;
+		$args          = [
+			'post_type' => 'post',
+			'showposts' => - 3,
+		];
+		$query         = new WP_Query( $args );
+		$all_quotes    = $query->posts;
+		// cache for an hour
+		set_transient( 'all_quotes', $all_quotes, 60 * 60 * 1 );
+	}
+
+	$clean_quotes = [];
+
+	foreach ( $all_quotes as $post ) {
+		$content = strip_tags( get_the_content( null, false, $post ) );
+		$image   = get_the_post_thumbnail_url( $post, 'full' );
+		array_push( $clean_quotes, [
+			'content' => $content,
+			'image'   => $image,
+		] );
+	}
+
+	return $clean_quotes;
+}
+
+add_action( 'rest_api_init', function () {
+	register_rest_route(
+		'quotes/v2', '/get',
+		[
+			'methods'  => 'GET',
+			'callback' => 'elon_get_quotes',
+		]
+	);
+} );
