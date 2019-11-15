@@ -230,13 +230,13 @@ add_action( 'rest_api_init', function () {
 
 function elon_get_quotes() {
 	// cache purge
-	//delete_transient('all_quotes');
+	// delete_transient('all_quotes');
 
 	if ( false === ( $all_quotes = get_transient( 'all_quotes' ) ) ) {
 		$all_media_ids = null;
 		$args          = [
 			'post_type' => 'post',
-			'showposts' => - 3,
+			'showposts' => -1,
 		];
 		$query         = new WP_Query( $args );
 		$all_quotes    = $query->posts;

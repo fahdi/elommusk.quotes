@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7650831a-8906-4f44-a99f-1eae54cdf88a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/quotesin/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/quotesin/functions.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,8 +52,16 @@
       <updated>1573779351719</updated>
       <workItem from="1573779352967" duration="3756000" />
       <workItem from="1573808162575" duration="463000" />
-      <workItem from="1573808819747" duration="5746000" />
+      <workItem from="1573808819747" duration="5794000" />
     </task>
+    <task id="LOCAL-00001" summary="new endpoint">
+      <created>1573837046761</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573837046761</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -72,5 +79,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="new endpoint" />
   </component>
 </project>
