@@ -236,7 +236,7 @@ function elon_get_quotes() {
 		$all_media_ids = null;
 		$args          = [
 			'post_type' => 'post',
-			'showposts' => -1,
+			'showposts' => - 1,
 		];
 		$query         = new WP_Query( $args );
 		$all_quotes    = $query->posts;
@@ -264,6 +264,35 @@ add_action( 'rest_api_init', function () {
 		[
 			'methods'  => 'GET',
 			'callback' => 'elon_get_quotes',
+		]
+	);
+} );
+
+function elon_get_random_quote() {
+	$args         = [
+		'post_type' => 'post',
+		'orderby'   => 'rand',
+		'showposts' => 1,
+	];
+	$random_query = new WP_Query( $args );
+	$random_quote = $random_query->the_post();
+	$quote        = strip_tags( get_the_content( null, false, $random_quote ) );
+	$image        = get_the_post_thumbnail_url( $random_quote, 'full' );
+	$clean_quote  = [
+		'quote' => $quote,
+		'image' => $image,
+	];
+	wp_reset_postdata();
+
+	return $clean_quote;
+}
+
+add_action( 'rest_api_init', function () {
+	register_rest_route(
+		'quotes/v2', '/get_random',
+		[
+			'methods'  => 'GET',
+			'callback' => 'elon_get_random_quote',
 		]
 	);
 } );
