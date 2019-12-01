@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7650831a-8906-4f44-a99f-1eae54cdf88a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/quotesin/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/quotesin/functions.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +24,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Bash" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -52,7 +54,17 @@
       <updated>1573779351719</updated>
       <workItem from="1573779352967" duration="3756000" />
       <workItem from="1573808162575" duration="463000" />
-      <workItem from="1573808819747" duration="5794000" />
+      <workItem from="1573808819747" duration="5976000" />
+      <workItem from="1573837296034" duration="1000" />
+      <workItem from="1573840497734" duration="4000" />
+      <workItem from="1573845178344" duration="147000" />
+      <workItem from="1573845690574" duration="762000" />
+      <workItem from="1573874340666" duration="1355000" />
+      <workItem from="1574023659281" duration="1410000" />
+      <workItem from="1574096222954" duration="252000" />
+      <workItem from="1574984034501" duration="2319000" />
+      <workItem from="1575017953777" duration="598000" />
+      <workItem from="1575156806563" duration="1483000" />
     </task>
     <task id="LOCAL-00001" summary="new endpoint">
       <created>1573837046761</created>
@@ -61,7 +73,28 @@
       <option name="project" value="LOCAL" />
       <updated>1573837046761</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Unlimited posts">
+      <created>1573837124953</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573837124953</updated>
+    </task>
+    <task id="LOCAL-00003" summary="tag template cleanup">
+      <created>1575158494169</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575158494169</updated>
+    </task>
+    <task id="LOCAL-00004" summary="endpoint for random post / quote">
+      <created>1575158512954</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575158512954</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,6 +115,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="new endpoint" />
+    <MESSAGE value="Unlimited posts" />
+    <MESSAGE value="tag template cleanup" />
+    <MESSAGE value="endpoint for random post / quote" />
+    <option name="LAST_COMMIT_MESSAGE" value="endpoint for random post / quote" />
   </component>
 </project>
