@@ -1,4 +1,4 @@
-#About
+## About
 
 An example wordpress code for REST API  with wordpress  created for WordCamp Islamabad and Lahore 2019.  
 
